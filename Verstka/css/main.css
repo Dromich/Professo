@@ -17,11 +17,11 @@
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid {
-	
+	color: red;
 }
 body input:required:valid,
 body textarea:required:valid {
-	
+	color: #4ba469;
 }
 
 html.js .loader {
@@ -58,7 +58,87 @@ body {
 	line-height: 1.6;
 	font-family: "RobotoRegular", sans-serif;
 	overflow-x: hidden;
+	background-image: url(../img/pat.png);
+	background-repeat: repeat;
 }
 .hidden {
 	display: none;
 }
+.def_bl {
+	background-color: #fff;
+	border-radius: 17px;
+	box-shadow: 0 27px 27px rgba(4, 40, 16, 0.1);
+	margin-top: 2%;
+}
+/*====HEAD===*/
+
+.logo_lnk {
+	margin-top: 30px;
+	display: block;
+}
+.head_info h3 {
+	padding: 0;
+	color: #50a76d;
+	font-family: "Rubik";
+	font-size: 17px;
+	font-weight: 700;
+	line-height: 17px;
+}
+.head_info p {
+	font-family: Rubik ,sans-serif;
+	font-weight: 400;
+	line-height: 18px;
+	padding: 0;
+	margin: 0;
+}
+.head_tel {
+	padding-top: 30px;
+}
+.head_tel a {
+	display: block;
+	color: #373435;
+	font-family: Rubik;
+	font-size: 19px;
+	font-weight: 700;
+	line-height: 26px;
+}
+.head_menu {
+	display: block;
+	width: 100%;
+	position: relative;
+	list-style: none;
+}
+.head_menu li {
+	display: inline-block;
+	/* width: 16%; */
+	text-align: left;
+	margin: 0 15px;
+}
+
+.head_menu li a {
+	color: #373435;
+	font-family: Rubik,sans-serif;
+	font-size: 16px;
+	font-weight: 700;
+	line-height: 32px;
+}
+
+.head_menu_wrp.col-md-12 {
+	border-radius: 17px;
+	border-top: 2px solid #50a76d;
+	background-color: #f4f8f5;
+	margin-top: 20px;
+}
+#header_green_ring {
+	width: 29px;
+	height: 29px;
+	background-color: #50a76d;
+	border-radius: 50%;
+	display: block;
+	margin: 0;
+	padding: 1px;
+	text-align: center;
+	color: #fff;
+}
+
+/*====HEAD===*/
