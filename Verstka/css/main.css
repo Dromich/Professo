@@ -192,14 +192,14 @@ body {
 	bottom: 50px;
 	/* z-index: 999999; */
 }
-.last_news h3 {
+.tucolor_ttl  {
 	color: #373435;
 	font-family: Rubik;
 	font-size: 16px;
 	font-weight: 700;
 	line-height: 32px;
 }
-.last_news h3 span {
+.tucolor_ttl  span {
 	color: #50a76d;
 }
 .last_news hr {
@@ -229,4 +229,64 @@ body {
 	font-weight: 400;
 	line-height: 32px;
 	text-decoration: underline;
+}
+.mid_col h3 {
+	/* width: 537px; */
+	height: 20px;
+	color: #373435;
+	font-family: Rubik;
+	font-size: 21px;
+	font-weight: 700;
+	line-height: 32px;
+}
+.mid_gr_line {
+	width: 70px;
+	height: 4px;
+	background-color: #50a76d;
+	display: block;
+}
+.mid_col p {
+	width: 533px;
+	/* height: 189px; */
+	color: #373435;
+	font-family: Rubik;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px;
+}
+.mid_item_sec h4 {
+	
+	color: #373435;
+	font-family: Rubik;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 23px;
+}
+.services_item {
+	list-style: none;
+	display: block;
+	width: 100%;
+}
+.services_item li {
+	display: inline-block;
+	width: 20%;
+	height: 110px;
+	position: relative;
+}
+.services_item li a {
+	width: 101px;
+	height: 12px;
+	color: #373435;
+	font-family: Rubik;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 23px;
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+#dentistry_item {
+	background-image: url(../img/services.png);
+	background-position: 0 0;
+	background-repeat: no-repeat;
 }
