@@ -93,11 +93,12 @@
 			<div class="col-md-3 last_news">
 				<h3 class="tucolor_ttl">Последние <span>новости</span></h3>
 				<hr>
-				<div class="last_news_item">
+				{custom  id="1"  template="main_news_last" available="main" navigation="no" from="0" limit="1" fixed="no" order="date" sort="desc" cache="no"}
+				<!--div class="last_news_item">
 					<img src="{THEME}/img/face_news.png" alt="alt">
 					<h4>Какое-то название
 						новости</h4>
-				</div>
+				</div-->
 				<a href="#">Все новости</a>
 			</div>
 

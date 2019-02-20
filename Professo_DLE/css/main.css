@@ -218,7 +218,10 @@ body {
 	line-height: 23px;
 }
 .last_news_item img {
-	width: 100%;
+	max-width: 100%;
+	max-height: 150px;
+	margin: 0 auto;
+	display: block;
 }
 .last_news a {
 	width: 79px;
