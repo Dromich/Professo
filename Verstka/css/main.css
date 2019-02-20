@@ -255,23 +255,28 @@ body {
 	line-height: 25px;
 }
 .mid_item_sec h4 {
-	
 	color: #373435;
 	font-family: Rubik;
 	font-size: 16px;
 	font-weight: 600;
 	line-height: 23px;
+	max-width: 478px;
 }
 .services_item {
 	list-style: none;
 	display: block;
 	width: 100%;
+	margin: 0;
+	padding: 0;
+	height: 180px;
 }
 .services_item li {
 	display: inline-block;
-	width: 20%;
-	height: 110px;
+	width: 14%;
+	height: 100%;
 	position: relative;
+	padding: 0;
+	margin: 2px 10px;
 }
 .services_item li a {
 	width: 101px;
@@ -283,10 +288,120 @@ body {
 	line-height: 23px;
 	position: absolute;
 	left: 0;
-	bottom: 0;
+	bottom: 60px;
 }
 #dentistry_item {
 	background-image: url(../img/services.png);
-	background-position: 0 0;
+	background-position: 7px 5px;
 	background-repeat: no-repeat;
+}
+#ortoped_item {
+	background-image: url(../img/services.png);
+	background-position: -110px 5px;
+	background-repeat: no-repeat;	
+}
+#kosmetik_item {
+	background-image: url(../img/services.png);
+	background-position: -250px 5px;
+	background-repeat: no-repeat;	
+}
+#figura_item {
+	background-image: url(../img/services.png);
+	background-position: -365px 5px;
+	background-repeat: no-repeat;	
+}
+#salon_item {
+	background-image: url(../img/services.png);
+	background-position: -470px 5px;
+	background-repeat: no-repeat;	
+}
+.left_menu {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+}
+.left_menu li {
+	width: 150px;
+	border: 1px solid #c9e8d2;
+	text-align: left;
+	margin: 10px 0;
+	border-radius: 25px;
+	padding-left: 15px;
+	background-color: #c9e8d2;
+}
+.left_menu li a {
+	width: 68px;
+	height: 192px;
+	color: #373435;
+	font-family: Rubik;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 30px;
+}
+.left_menu li img {
+	float: right;
+	margin-top: 7px;
+	margin-right: 10px;
+}
+.r_news_item a {
+	
+	color: #399a5c;
+	font-family: Rubik;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 25px;
+	
+}
+.r_news_item a span {
+	color: #373435;
+	line-height: 32px;
+	display: block;
+}
+.all_r_news {
+	width: 60px;
+	height: 31px;
+	border-radius: 3px;
+	background-color: #e1f3e8;
+	padding-left: 10px;
+}
+.all_r_news a {
+	
+	color: #399a5c;
+	font-family: Rubik;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 32px;
+	text-decoration: underline;
+}
+.all_r_news img {
+	margin-right: 5px;
+}
+.licens_items img {
+	margin: 15px auto;
+}
+.price_items {
+	display: block;
+	width: 100%;
+	list-style: none;
+	padding: 0;
+}
+.price_items li {
+	color: #373435;
+	font-family: Rubik;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 45px;
+	border-bottom: 1px solid #3333331a;
+}
+.price_items li span {
+	float: right;
+}
+.price_items li:first-child {
+	color: #373435;
+	font-family: Rubik;
+	font-size: 15px;
+	font-weight: 700;
+	line-height: 32px;
+	background-color: #f5faf6;
+	padding: 10px;
 }
