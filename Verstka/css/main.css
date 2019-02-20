@@ -381,9 +381,10 @@ body {
 }
 .price_items {
 	display: block;
-	width: 100%;
+	width: 95%;
 	list-style: none;
 	padding: 0;
+	margin: 0 auto;
 }
 .price_items li {
 	color: #373435;
