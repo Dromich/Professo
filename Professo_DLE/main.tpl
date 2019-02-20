@@ -11,6 +11,7 @@
 	<meta charset="utf-8">
 
 	<title>Медицинскый центр здоров'я и красоты "Профессо"</title>
+
 	{headers}
 
 	<link rel="shortcut icon" href="{THEME}/img/favicon/favicon.ico" type="image/x-icon">
@@ -161,7 +162,9 @@
 			<!--END MID COL-->
 			<div class="col-md-2 r_col">
 				<h3 class="tucolor_ttl">Новости</h3>
-				<div class="r_news_item">
+
+				{custom  category="1-100"  template="main_news" available="main" navigation="no" from="0" limit="2" fixed="no" order="date" sort="desc" cache="no"}
+				<!--div class="r_news_item">
 					<a href="#">График работы
 						клиники в дни
 						новогодних
@@ -178,7 +181,7 @@
 						<span>26.12.2018</span>
 					</a>
 					<hr>
-				</div>
+				</div-->
 				<div class="all_r_news">
 					<a href=""> <img src="{THEME}/img/right-arrow.png" alt="arow"> Все</a>
 				</div>
