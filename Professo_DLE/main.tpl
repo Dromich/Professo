@@ -11,29 +11,29 @@
 	<meta charset="utf-8">
 
 	<title>Медицинскый центр здоров'я и красоты "Профессо"</title>
-	<meta name="description" content="">
+	{headers}
 
-	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
-	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
-	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+	<link rel="shortcut icon" href="{THEME}/img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="{THEME}/img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="{THEME}/img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="{THEME}/img/favicon/apple-touch-icon-114x114.png">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-	<link rel="stylesheet" href="libs/bootstrap/css/bootstrap-grid.min.css">
-	<link rel="stylesheet" href="libs/animate/animate.css">
+	<link rel="stylesheet" href="{THEME}/libs/bootstrap/css/bootstrap-grid.min.css">
+	<!--link rel="stylesheet" href="{THEME}/libs/animate/animate.css"-->
 
-	<link rel="stylesheet" href="css/fonts.css">
+	<link rel="stylesheet" href="{THEME}/css/fonts.css">
 	<!--GOOGLE FONTS-->
 
 	<link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet"> 
 
 	<!--GOOGLE FONTS-->
-	<link rel="stylesheet" href="css/main.css">
-	<link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="{THEME}/css/main.css">
+	<link rel="stylesheet" href="{THEME}/css/media.css">
 
-	<script src="libs/modernizr/modernizr.js"></script>
+	<script src="{THEME}/libs/modernizr/modernizr.js"></script>
 
 </head>
 
@@ -42,7 +42,7 @@
 	<div id="head" class="container def_bl">
 		<div class="row">
 			<div class="col-md-3">
-				<a class="logo_lnk" href="/"><img src="img/logo.png" alt="Logo"></a>
+				<a class="logo_lnk" href="/"><img src="{THEME}/img/logo.png" alt="Logo"></a>
 			</div>
 			<div class="col-md-6 head_info">
 				<div class="col-md-4">
@@ -62,12 +62,12 @@
 			</div>
 			<div class="head_menu_wrp col-md-12">
 				<ul class="head_menu">
-					<li><a href="">О нас</a></li>
-					<li><a href="">Стоматология</a></li>
-					<li><a href="">Неврология</a></li>
-					<li><a href="">Мануальная терапия</a></li>
-					<li><a href="">Косметология</a></li>
-					<li><a href="">Коррекция фигуры</a></li>
+					<li><a href="/">О нас</a></li>
+					<li><a href="/">Стоматология</a></li>
+					<li><a href="/">Неврология</a></li>
+					<li><a href="/">Мануальная терапия</a></li>
+					<li><a href="/">Косметология</a></li>
+					<li><a href="/">Коррекция фигуры</a></li>
 					<li><span id="header_green_ring">...</span></li>
 				</ul>
 
@@ -82,10 +82,10 @@
 					<!--span class="slideOwerlay"></span-->
 					<div class="fotorama topfotorama" data-width="100%" data-maxheight="350" data-fit="cover" data-autoplay="true"
 					 data-loop="true">
-						<div data-img="img/7957.jpg"><span class="slider_ttl">Лечение заболеваний
+						<div data-img="{THEME}/img/7957.jpg"><span class="slider_ttl">Лечение заболеваний
 								позвоночника и суставов</span></div>
 
-						<div data-img="img/63308.jpg"><span class="slider_ttl">Индивидуальный подход к пациенту</span></div>
+						<div data-img="{THEME}/img/63308.jpg"><span class="slider_ttl">Индивидуальный подход к пациенту</span></div>
 					</div>
 				</div>
 			</div>
@@ -93,7 +93,7 @@
 				<h3 class="tucolor_ttl">Последние <span>новости</span></h3>
 				<hr>
 				<div class="last_news_item">
-					<img src="img/face_news.png" alt="alt">
+					<img src="{THEME}/img/face_news.png" alt="alt">
 					<h4>Какое-то название
 						новости</h4>
 				</div>
@@ -109,11 +109,11 @@
 			<div class="col-md-2 left_Col">
 				<h3 class="tucolor_ttl">Салон <span>красоты</span></h3>
 				<ul class="left_menu">
-					<li> <a href="#">О нас</a> <img src="img/list1.png" alt="item_icon"></li>
-					<li> <a href="#">Услуги</a> <img src="img/document.png" alt="item_icon"></li>
-					<li> <a href="#">Цены</a> <img src="img/notification.png" alt="item_icon"></li>
-					<li> <a href="#">Мастера</a> <img src="img/shield.png" alt="item_icon"></li>
-					<li> <a href="#">Контакты</a> <img src="img/cursor.png" alt="item_icon"></li>
+					<li> <a href="#">О нас</a> <img src="{THEME}/img/list1.png" alt="item_icon"></li>
+					<li> <a href="#">Услуги</a> <img src="{THEME}/img/document.png" alt="item_icon"></li>
+					<li> <a href="#">Цены</a> <img src="{THEME}/img/notification.png" alt="item_icon"></li>
+					<li> <a href="#">Мастера</a> <img src="{THEME}/img/shield.png" alt="item_icon"></li>
+					<li> <a href="#">Контакты</a> <img src="{THEME}/img/cursor.png" alt="item_icon"></li>
 				</ul>
 
 			</div>
@@ -180,14 +180,14 @@
 					<hr>
 				</div>
 				<div class="all_r_news">
-					<a href=""> <img src="img/right-arrow.png" alt="arow"> Все</a>
+					<a href=""> <img src="{THEME}/img/right-arrow.png" alt="arow"> Все</a>
 				</div>
 				<h3 class="tucolor_ttl">Лицензии</h3>
 
 				<div class="licens_items">
-					<img src="img/Licens_1.png" alt="Licens">
-					<img src="img/Licens_2.png" alt="Licens">
-					<img src="img/licens_3.png" alt="Licens">
+					<img src="{THEME}/img/Licens_1.png" alt="Licens">
+					<img src="{THEME}/img/Licens_2.png" alt="Licens">
+					<img src="{THEME}/img/licens_3.png" alt="Licens">
 
 				</div>
 
@@ -258,14 +258,14 @@
 		<h3>Контактная информация</h3>
 		<div class="footer_phones_mail">
 <div class="ph">
-	<img src="img/icons/phone-auricular-outline.svg" alt="phone">
+	<img src="{THEME}/img/icons/phone-auricular-outline.svg" alt="phone">
 	
 	<a href="tel:+74959831570">+7 (495) 983-15-70</a>
 	<a href="tel:+79031320231">+7 (903) 132-02-31</a>
 	
 </div>
 <div class="mai">
-	<img src="img/icons/email.svg" alt="email">
+	<img src="{THEME}/img/icons/email.svg" alt="email">
 	<a href="mailto:ex.professo@mail.ru">ex.professo@mail.ru</a>
 </div>
 		</div>
@@ -302,15 +302,17 @@
 	<script src="libs/html5shiv/html5shiv-printshiv.min.js"></script>
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
+	{jsfiles}
+	
+	{AJAX}
 
-	<script src="libs/jquery/jquery-1.11.2.min.js"></script>
-	<script src="libs/waypoints/waypoints.min.js"></script>
-	<script src="libs/animate/animate-css.js"></script>
-	<script src="libs/plugins-scroll/plugins-scroll.js"></script>
+	<script src="{THEME}/libs/waypoints/waypoints.min.js"></script>
+	<!--script src="{THEME}/libs/animate/animate-css.js"></script-->
+	<script src="{THEME}/libs/plugins-scroll/plugins-scroll.js"></script>
 
-	<script src="js/common.js"></script>
-	<link rel="stylesheet" href="js/fotorama/fotorama.css">
-	<script src="js/fotorama/fotorama.js"></script>
+	<script src="{THEME}/js/common.js"></script>
+	<link rel="stylesheet" href="{THEME}/js/fotorama/fotorama.css">
+	<script src="{THEME}/js/fotorama/fotorama.js"></script>
 
 
 </body>
