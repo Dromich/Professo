@@ -9,14 +9,15 @@ $(function() {
 
 	//E-mail Ajax Send
 	//Documentation & Example: https://github.com/agragregra/uniMail
-	$("form").submit(function() { //Change
+	$(".ajax_form").submit(function() { //Change
 		var th = $(this);
 		$.ajax({
 			type: "POST",
-			url: "mail.php", //Change
+			url: "/mail.php", //Change
 			data: th.serialize()
 		}).done(function() {
-			alert("Thank you!");
+			//alert("Thank you!");
+			$(this).html("<h3>Спасибо за заявку скоро мы перезвоним</h3>");
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");

@@ -58,8 +58,8 @@
 				</div>
 			</div>
 			<div class="col-md-3 head_tel">
-				<a href="#">+7 (495) 983-15-70</a>
-				<a href="#">+7 (903) 132-02-31</a>
+					<a href="tel:+74959831570">+7 (495) 983-15-70</a>
+					<a href="tel:+79031320231">+7 (903) 132-02-31</a>
 			</div>
 			<div class="head_menu_wrp col-md-12">
 				<ul class="head_menu">
@@ -94,11 +94,7 @@
 				<h3 class="tucolor_ttl">Последние <span>новости</span></h3>
 				<hr>
 				{custom  id="1"  template="main_news_last" available="main" navigation="no" from="0" limit="1" fixed="no" order="date" sort="desc" cache="no"}
-				<!--div class="last_news_item">
-					<img src="{THEME}/img/face_news.png" alt="alt">
-					<h4>Какое-то название
-						новости</h4>
-				</div-->
+				
 				<a href="#">Все новости</a>
 			</div>
 
@@ -165,24 +161,7 @@
 				<h3 class="tucolor_ttl">Новости</h3>
 
 				{custom  category="1-100"  template="main_news" available="main" navigation="no" from="0" limit="2" fixed="no" order="date" sort="desc" cache="no"}
-				<!--div class="r_news_item">
-					<a href="#">График работы
-						клиники в дни
-						новогодних
-						каникул
-						<span>26.12.2018</span>
-					</a>
-					<hr>
-				</div>
-				<div class="r_news_item">
-					<a href="#">В воскресенье
-						23 декабря
-						клиника работает
-						до 17:00
-						<span>26.12.2018</span>
-					</a>
-					<hr>
-				</div-->
+				
 				<div class="all_r_news">
 					<a href=""> <img src="{THEME}/img/right-arrow.png" alt="arow"> Все</a>
 				</div>
@@ -208,6 +187,11 @@
 				<h3>Остались вопросы? <span>Тогда напишите нам</span></h3>
 
 				<form id="main_page_form" class="ajax_form">
+					<!-- Hidden Required Fields -->
+		<input type="hidden" name="project_name" value="Site Name">
+		<input type="hidden" name="admin_email" value="admin@mail.com">
+		<input type="hidden" name="form_subject" value="Form Subject">
+<!-- END Hidden Required Fields -->
 					<input type="text" name="Имя" class="fio" placeholder="Ваше Имя">
 					<input type="text" name="Телефон" class="fio" placeholder="Телефон">
 					<textarea name="Вопрос" class="my_quest" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
