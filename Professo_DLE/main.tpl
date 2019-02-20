@@ -188,13 +188,13 @@
 
 				<form id="main_page_form" class="ajax_form">
 					<!-- Hidden Required Fields -->
-		<input type="hidden" name="project_name" value="Site Name">
-		<input type="hidden" name="admin_email" value="admin@mail.com">
-		<input type="hidden" name="form_subject" value="Form Subject">
+		<input type="hidden" name="project_name" value="Professo">
+		<input type="hidden" name="admin_email" value="legranchio@gmail.com">
+		<input type="hidden" name="form_subject" value="Заявка с сайта ">
 <!-- END Hidden Required Fields -->
-					<input type="text" name="Имя" class="fio" placeholder="Ваше Имя">
-					<input type="text" name="Телефон" class="fio" placeholder="Телефон">
-					<textarea name="Вопрос" class="my_quest" cols="30" rows="10" placeholder="Ваше сообщение"></textarea>
+					<input type="text" name="Имя" class="fio" placeholder="Ваше Имя" required>
+					<input type="text" name="Телефон" class="fio" placeholder="Телефон" required>
+					<textarea name="Вопрос" class="my_quest" cols="30" rows="10" placeholder="Ваше сообщение" required></textarea>
 					<input type="submit" class="submit_main" value="Отправить сообщение">
 
 				</form>

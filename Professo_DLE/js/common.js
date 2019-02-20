@@ -17,7 +17,7 @@ $(function() {
 			data: th.serialize()
 		}).done(function() {
 			//alert("Thank you!");
-			$(this).html("<h3>Спасибо за заявку скоро мы перезвоним</h3>");
+			th.html("<span class=\"form_mesage\">Спасибо за заявку скоро мы перезвоним</span>");
 			setTimeout(function() {
 				// Done Functions
 				th.trigger("reset");
