@@ -68,13 +68,16 @@ body {
 	background-color: #fff;
 	border-radius: 17px;
 	box-shadow: 0 27px 27px rgba(4, 40, 16, 0.1);
-	margin-top: 2%;
+	margin-top: 36px;
 }
 /*====HEAD===*/
 
 .logo_lnk {
 	margin-top: 30px;
 	display: block;
+}
+.logo_img {
+	max-width: 100%;
 }
 .head_info h3 {
 	padding: 0;
@@ -235,7 +238,7 @@ body {
 }
 .mid_col h3 {
 	/* width: 537px; */
-	height: 20px;
+	
 	color: #373435;
 	font-family: Rubik;
 	font-size: 21px;
@@ -249,8 +252,7 @@ body {
 	display: block;
 }
 .mid_col p {
-	width: 533px;
-	/* height: 189px; */
+	
 	color: #373435;
 	font-family: Rubik;
 	font-size: 14px;
@@ -449,7 +451,7 @@ body {
 	display: inline-block;
 }
 .my_quest {
-	width: 360px;
+	width: 97%;
 	height: 135px;
 	border-radius: 17px;
 	background-color: #c9e8d2;

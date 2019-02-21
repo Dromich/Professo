@@ -39,11 +39,67 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.price_items li {
+		color: #373435;
+		font-family: Rubik;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 25px;
+		border-bottom: 1px solid #3333334d;
+	}
+	.timetable_list {
+		list-style: none;
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.head_tel a {
+		display: inline-block;
+		color: #373435;
+		font-family: Rubik;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 18px;
+		margin: 8px 10px;
+	}
+	.head_info p {
+		
+		font-size: 14px;
+	}
 
 }
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	.price_items li {
+		color: #373435;
+		font-family: Rubik;
+		font-size: 13px;
+		font-weight: 400;
+		line-height: 25px;
+		border-bottom: 1px solid #3333334d;
+	}
+	.timetable_list {
+		list-style: none;
+		display: block;
+		width: 100%;
+		margin: 0 auto;
+		padding: 0;
+	}
+	.head_tel a {
+		display: inline-block;
+		color: #373435;
+		font-family: Rubik;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 18px;
+		margin: 8px 10px;
+	}
+	.head_info p {
+		
+		font-size: 13px;
+	}
 
 }
 

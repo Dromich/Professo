@@ -43,15 +43,15 @@
 	<div id="head" class="container def_bl">
 		<div class="row">
 			<div class="col-md-3">
-				<a class="logo_lnk" href="/"><img src="{THEME}/img/logo.png" alt="Logo"></a>
+				<a class="logo_lnk" href="/"><img class="logo_img" src="{THEME}/img/logo.png" alt="Logo"></a>
 			</div>
-			<div class="col-md-6 head_info">
-				<div class="col-md-4">
+			<div class="col-md-6  col-xs-12 head_info">
+				<div class="col-md-4 col-xs-6">
 					<h3>Режим работы:</h3>
 					<p>пн-пт: 10:00 - 20:00
 						сб-вс: 11:00 - 18:00</p>
 				</div>
-				<div class="col-md-8">
+				<div class="col-md-8 col-xs-6">
 					<h3>Адрес:</h3>
 					<p>105005, Москва, ул. Спартаковская,
 						д. 25/28, стр. 1, этаж 2</p>
@@ -189,11 +189,11 @@
 				<form id="main_page_form" class="ajax_form">
 					<!-- Hidden Required Fields -->
 		<input type="hidden" name="project_name" value="Professo">
-		<input type="hidden" name="admin_email" value="legranchio@gmail.com">
+		<input type="hidden" name="admin_email" value="myhome2017@yandex.ru">
 		<input type="hidden" name="form_subject" value="Заявка с сайта ">
 <!-- END Hidden Required Fields -->
 					<input type="text" name="Имя" class="fio" placeholder="Ваше Имя" required>
-					<input type="text" name="Телефон" class="fio" placeholder="Телефон" required>
+					<input type="text" id="phone_main_form" name="Телефон" class="fio" placeholder="Телефон" required>
 					<textarea name="Вопрос" class="my_quest" cols="30" rows="10" placeholder="Ваше сообщение" required></textarea>
 					<input type="submit" class="submit_main" value="Отправить сообщение">
 
@@ -301,8 +301,18 @@
 	<script src="{THEME}/js/common.js"></script>
 	<link rel="stylesheet" href="{THEME}/js/fotorama/fotorama.css">
 	<script src="{THEME}/js/fotorama/fotorama.js"></script>
+	<script src="{THEME}/js/input_mask.js"></script>
 
+	<script type="text/javascript">
+		$(document).ready(function() {
+			$("#phone_main_form").inputmask("+7(999)999-99-99");
 
+			 
+		});     
+	    
+  
+
+		</script>
 </body>
 
 </html>
