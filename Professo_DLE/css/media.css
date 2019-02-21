@@ -12,6 +12,34 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.timetable_list {
+		
+		padding: 0;
+	}
+	.footer_ul {
+		list-style: none;
+		display: block;
+		width: 100%;
+		padding: 0;
+	}
+	.price_items li {
+	font-size: 13px;
+	}
+	.left_menu li {
+		width: 100%;
+		
+		text-align: center;
+		
+	}
+	.head_tel a {
+		display: inline-block;
+		color: #373435;
+		font-family: Rubik;
+		font-size: 19px;
+		font-weight: 700;
+		line-height: 26px;
+		margin: 5px 45px;
+	}
 	
 	/*Disable Animation on Mobile Devices*/
 	.animated {
@@ -39,6 +67,62 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.head_menu {
+		display: block;
+		width: 100%;
+		position: relative;
+		list-style: none;
+		padding: 0;
+	}
+	.head_menu li {
+		display: inline-block;
+		/* width: 16%; */
+		text-align: center;
+		margin: 0 10px;
+	}
+	.head_menu li a {
+		color: #373435;
+		font-family: Rubik,sans-serif;
+		font-size: 14px;
+		font-weight: 700;
+		line-height: 22px;
+		letter-spacing: .5px;
+	}
+	.left_menu li {
+		width: 100%;
+		
+	}
+	.services_item {
+		list-style: none;
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		 height: auto; 
+		position: relative;
+	}
+	.services_item li {
+		display: inline-block;
+		width: 40%;		
+		position: relative;
+		padding: 0;		
+		float: none;
+		text-align: center;		
+		vertical-align: top;
+	}
+	.services_item li a {
+		color: #373435;
+		font-family: Rubik;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 5px;
+	}
+	.services_img {
+		max-width: 100%;
+		display: block;
+		margin: 5px auto;
+		max-height: 60px;
+	}
 	.price_items li {
 		color: #373435;
 		font-family: Rubik;
@@ -72,6 +156,61 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	.head_menu {
+		display: block;
+		width: 100%;
+		position: relative;
+		list-style: none;
+		padding: 0;
+	}
+	.head_menu li {
+		display: inline-block;
+		/* width: 16%; */
+		text-align: center;
+		margin: 0 10px;
+	}
+	.head_menu li a {
+		color: #373435;
+		font-family: Rubik,sans-serif;
+		font-size: 13px;
+		font-weight: 700;
+		/* line-height: 32px; */
+	}
+	.left_menu li {
+		width: 100%;
+		
+	}
+	.services_item {
+		list-style: none;
+		display: block;
+		width: 100%;
+		margin: 0;
+		padding: 0;
+		 height: auto; 
+		position: relative;
+	}
+	.services_item li {
+		display: inline-block;
+		width: 40%;		
+		position: relative;
+		padding: 0;		
+		float: none;
+		text-align: center;		
+		vertical-align: top;
+	}
+	.services_item li a {
+		color: #373435;
+		font-family: Rubik;
+		font-size: 12px;
+		font-weight: 500;
+		line-height: 5px;
+	}
+	.services_img {
+		max-width: 100%;
+		display: block;
+		margin: 5px auto;
+		max-height: 60px;
+	}
 	.price_items li {
 		color: #373435;
 		font-family: Rubik;
@@ -91,7 +230,7 @@
 		display: inline-block;
 		color: #373435;
 		font-family: Rubik;
-		font-size: 14px;
+		font-size: 12px;
 		font-weight: 700;
 		line-height: 18px;
 		margin: 8px 10px;

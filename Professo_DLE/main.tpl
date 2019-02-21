@@ -219,7 +219,7 @@
 	<footer>
 		<div class="container def_bl footer_section">
 <div class="row">
-	<div class="col-md-4 footer_services"> 
+	<div class="col-md-4 col-xs-6 footer_services"> 
 		<h3>Услуги</h3>
 		<ul class="footer_ul">
 			<li> <a href="#">Стоматология</a> </li>
@@ -229,7 +229,7 @@
 			<li> <a href="#">Салон красоты</a> </li>
 		</ul>
 	</div>
-	<div class="col-md-4 footer_info">
+	<div class="col-md-4 col-xs-6 footer_info">
 		<h3>Информация</h3>
 		<ul class="footer_ul">
 			<li> <a href="#">О нас</a> </li>
@@ -242,7 +242,7 @@
 			
 		</ul>
 	</div>
-	<div class="col-md-4 footer_contact_info">
+	<div class="col-md-4 col-xs-12 footer_contact_info">
 		<h3>Контактная информация</h3>
 		<div class="footer_phones_mail">
 <div class="ph">
@@ -269,7 +269,7 @@
 				Имеются противопоказания.
 				Проконсультируйтесь со специалистом</a>
 	</div>
-	<div class="col-md-12">
+	<div class="col-md-12 col-xs-12">
 		<a class="copir" href="#">© 2019 ООО "Профессо"</a>
 	</div>
 </div>
