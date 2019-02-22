@@ -37,6 +37,23 @@ $(function() {
 	};
 
 	$("img, a").on("dragstart", function(event) { event.preventDefault(); });
+
+
+	$( "#header_green_ring" ).click(function(){	
+		$( ".drop_div" ).slideToggle(500)
+
+		//  let text = $(this).text();
+
+		//  if (text =="свернуть" ) {
+			
+		//  	$(this).text("Розвернуть")
+		// 	$("#mob_menu_div").css("height","auto")		
+		//  	}else{			
+		//  		$("#mob_menu_div").css("height","100%")
+		//  		$(this).text("свернуть")
+		//  	};	
+
+	})
 	
 });
 

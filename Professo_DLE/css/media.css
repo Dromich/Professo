@@ -12,6 +12,7 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	
 	.timetable_list {
 		
 		padding: 0;
@@ -67,6 +68,20 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.photo_story {
+		max-width: 80%;
+		border-radius: 17px;
+		display: block;
+		margin: 0 auto;
+	}
+	.short_story_img {
+		float: none;
+		max-width: 100%;
+		border-radius: 17px;
+		margin-right: 10px;
+		max-height: none;
+		display: block;
+	}
 	.head_menu {
 		display: block;
 		width: 100%;

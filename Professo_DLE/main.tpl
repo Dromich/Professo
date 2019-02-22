@@ -28,10 +28,12 @@
 	<link rel="stylesheet" href="{THEME}/css/fonts.css">
 	<!--GOOGLE FONTS-->
 
-	<link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet"> 
+	<link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700" rel="stylesheet">
 
 	<!--GOOGLE FONTS-->
 	<link rel="stylesheet" href="{THEME}/css/main.css">
+	<link rel="stylesheet" href="{THEME}/css/engine.css">
+
 	<link rel="stylesheet" href="{THEME}/css/media.css">
 
 	<script src="{THEME}/libs/modernizr/modernizr.js"></script>
@@ -58,8 +60,8 @@
 				</div>
 			</div>
 			<div class="col-md-3 head_tel">
-					<a href="tel:+74959831570">+7 (495) 983-15-70</a>
-					<a href="tel:+79031320231">+7 (903) 132-02-31</a>
+				<a href="tel:+74959831570">+7 (495) 983-15-70</a>
+				<a href="tel:+79031320231">+7 (903) 132-02-31</a>
 			</div>
 			<div class="head_menu_wrp col-md-12">
 				<ul class="head_menu">
@@ -69,13 +71,23 @@
 					<li><a href="/">Мануальная терапия</a></li>
 					<li><a href="/">Косметология</a></li>
 					<li><a href="/">Коррекция фигуры</a></li>
-					<li><span id="header_green_ring">...</span></li>
+					
+					[not-smartphone] <li><span id="header_green_ring">...</span></li> [/not-smartphone]
+					<div class="drop_div">
+						<li class="drop_items"><a href="/">Салон красоты</a></li>
+					<li class="drop_items"><a href="/">Контакты</a></li>
+					<li class="drop_items"><a href="/">Врачи</a></li>
+					</div>
+					
+					[smartphone] <li><span id="header_green_ring">...</span></li> [/smartphone]
+					
 				</ul>
 
 			</div>
 		</div>
 	</div>
 
+	[not-available=showfull|static|cat]
 	<div class="container def_bl slider_wrap">
 		<div class="row">
 			<div class="col-md-9">
@@ -93,18 +105,18 @@
 			<div class="col-md-3 last_news">
 				<h3 class="tucolor_ttl">Последние <span>новости</span></h3>
 				<hr>
-				{custom  id="1"  template="main_news_last" available="main" navigation="no" from="0" limit="1" fixed="no" order="date" sort="desc" cache="no"}
-				
+				{custom id="1" template="main_news_last" available="main" navigation="no" from="0" limit="1" fixed="no"	order="date" sort="desc" cache="no"}
+
 				<a href="#">Все новости</a>
 			</div>
 
 		</div>
 	</div>
-
+	[/not-available]
 
 	<div class="container def_bl">
 		<div class="row">
-			<div class="col-md-2 left_Col">
+			<div class="col-md-2 col-xs-12 left_Col">
 				<h3 class="tucolor_ttl">Салон <span>красоты</span></h3>
 				<ul class="left_menu">
 					<li> <a href="#">О нас</a> <img src="{THEME}/img/list1.png" alt="item_icon"></li>
@@ -115,6 +127,18 @@
 				</ul>
 
 			</div>
+
+			[not-available=userinfo|register|main]
+			<div class="col-md-10 info-content">
+				{info}
+				{content}
+			</div>
+
+
+			[/not-available]
+
+
+			[available=userinfo|register|main]
 			<div class="col-md-8 mid_col">
 				<h3>Многопрофильный медицинский центр в Москве</h3>
 				<span class="mid_gr_line"></span>
@@ -127,11 +151,12 @@
 				<div class="mid_item_sec">
 					<h4>Наш коллектив специализируется на предоставлении ряда медицинских услуг:</h4>
 					<ul class="services_item">
-						<li ><img class="services_img" src="{THEME}/img/icons/s2.png" alt="dentist"><a href="#"> Стоматология</a></li>
-						<li ><img class="services_img" src="{THEME}/img/icons/kic1.png" alt="dentist"><a href="#">Лечение позвоночника и суставов</a></li>
-						<li ><img class="services_img" src="{THEME}/img/icons/cic1.png" alt="dentist"><a href="#">Косметология</a></li>
-						<li ><img class="services_img" src="{THEME}/img/icons/fic1.png" alt="dentist"><a href="#">Коррекция фигуры</a></li>
-						<li ><img class="services_img" src="{THEME}/img/icons/bic1.png" alt="dentist"><a href="#">Салон красоты</a></li>
+						<li><img class="services_img" src="{THEME}/img/icons/s2.png" alt="dentist"><a href="#"> Стоматология</a></li>
+						<li><img class="services_img" src="{THEME}/img/icons/kic1.png" alt="dentist"><a href="#">Лечение позвоночника и
+								суставов</a></li>
+						<li><img class="services_img" src="{THEME}/img/icons/cic1.png" alt="dentist"><a href="#">Косметология</a></li>
+						<li><img class="services_img" src="{THEME}/img/icons/fic1.png" alt="dentist"><a href="#">Коррекция фигуры</a></li>
+						<li><img class="services_img" src="{THEME}/img/icons/bic1.png" alt="dentist"><a href="#">Салон красоты</a></li>
 					</ul>
 				</div>
 				<h3>Цены</h3>
@@ -160,23 +185,28 @@
 			<div class="col-md-2 r_col">
 				<h3 class="tucolor_ttl">Новости</h3>
 
-				{custom  category="1-100"  template="main_news" available="main" navigation="no" from="0" limit="2" fixed="no" order="date" sort="desc" cache="no"}
-				
+				{custom category="1-100" template="main_news" available="main" navigation="no" from="0" limit="2" fixed="no"order="date" sort="desc" cache="no"}
+
 				<div class="all_r_news">
 					<a href=""> <img src="{THEME}/img/right-arrow.png" alt="arow"> Все</a>
 				</div>
 				<h3 class="tucolor_ttl">Лицензии</h3>
 
 				<div class="licens_items">
-					<img src="{THEME}/img/Licens_1.png" alt="Licens">
-					<img src="{THEME}/img/Licens_2.png" alt="Licens">
-					<img src="{THEME}/img/licens_3.png" alt="Licens">
+<a href="{THEME}/img/Licens_1.png" class="highslide" target="_blank"><img src="{THEME}/img/Licens_1.png" alt="Licens"></a>
+
+<a href="{THEME}/img/Licens_2.png" class="highslide" target="_blank"><img src="{THEME}/img/Licens_2.png" alt="Licens"></a>
+
+<a href="{THEME}/img/licens_3.png" class="highslide" target="_blank"><img src="{THEME}/img/licens_3.png" alt="Licens"></a>
+					
+					
 
 				</div>
 
 
 			</div>
 			<!--END R News-->
+			[/available]
 
 		</div>
 	</div>
@@ -188,10 +218,10 @@
 
 				<form id="main_page_form" class="ajax_form">
 					<!-- Hidden Required Fields -->
-		<input type="hidden" name="project_name" value="Professo">
-		<input type="hidden" name="admin_email" value="myhome2017@yandex.ru">
-		<input type="hidden" name="form_subject" value="Заявка с сайта ">
-<!-- END Hidden Required Fields -->
+					<input type="hidden" name="project_name" value="Professo">
+					<input type="hidden" name="admin_email" value="myhome2017@yandex.ru">
+					<input type="hidden" name="form_subject" value="Заявка с сайта ">
+					<!-- END Hidden Required Fields -->
 					<input type="text" name="Имя" class="fio" placeholder="Ваше Имя" required>
 					<input type="text" id="phone_main_form" name="Телефон" class="fio" placeholder="Телефон" required>
 					<textarea name="Вопрос" class="my_quest" cols="30" rows="10" placeholder="Ваше сообщение" required></textarea>
@@ -210,69 +240,70 @@
 
 					<li>Зеленков Г. Г.<span>Пн-Ср <br> с 08:00 до 20:00</span></li>
 				</ul>
-<a id="all_dictors" href="#">Посмотреть всех врачей</a>
+				<a id="all_dictors" href="#">Посмотреть всех врачей</a>
 			</div>
 		</div>
-	</div><!--END timetable SECTION-->
+	</div>
+	<!--END timetable SECTION-->
 
 
 	<footer>
 		<div class="container def_bl footer_section">
-<div class="row">
-	<div class="col-md-4 col-xs-6 footer_services"> 
-		<h3>Услуги</h3>
-		<ul class="footer_ul">
-			<li> <a href="#">Стоматология</a> </li>
-			<li> <a href="#">Неврология и мануальная терапия</a> </li>
-			<li> <a href="#">Косметология</a> </li>
-			<li> <a href="#">Коррекция фигуры</a> </li>
-			<li> <a href="#">Салон красоты</a> </li>
-		</ul>
-	</div>
-	<div class="col-md-4 col-xs-6 footer_info">
-		<h3>Информация</h3>
-		<ul class="footer_ul">
-			<li> <a href="#">О нас</a> </li>
-			<li> <a href="#">Лицензии</a> </li>
-			<li> <a href="#">Отзывы</a> </li>
-			<li> <a href="#">Новости</a> </li>
-			<li> <a href="#">Контакты</a> </li>
-			<li> <a href="#">Фототелеграфия</a> </li>
-			<li> <a href="#">Пользовательское соглашение о персональных данных</a> </li>
-			
-		</ul>
-	</div>
-	<div class="col-md-4 col-xs-12 footer_contact_info">
-		<h3>Контактная информация</h3>
-		<div class="footer_phones_mail">
-<div class="ph">
-	<img src="{THEME}/img/icons/phone-auricular-outline.svg" alt="phone">
-	
-	<a href="tel:+74959831570">+7 (495) 983-15-70</a>
-	<a href="tel:+79031320231">+7 (903) 132-02-31</a>
-	
-</div>
-<div class="mai">
-	<img src="{THEME}/img/icons/email.svg" alt="email">
-	<a href="mailto:ex.professo@mail.ru">ex.professo@mail.ru</a>
-</div>
-		</div>
-<ul class="footer_social_links">
-	<li id="vk"> <a href="#"></a> </li>
-	<li id="fb"> <a href="#"></a> </li>
-	<li id="ytb"> <a href="#"></a> </li>
-	<li id="googl"> <a href="#"></a> </li>
-	<li id="insta"> <a href="#"></a> </li>
-</ul>
+			<div class="row">
+				<div class="col-md-4 col-xs-6 footer_services">
+					<h3>Услуги</h3>
+					<ul class="footer_ul">
+						<li> <a href="#">Стоматология</a> </li>
+						<li> <a href="#">Неврология и мануальная терапия</a> </li>
+						<li> <a href="#">Косметология</a> </li>
+						<li> <a href="#">Коррекция фигуры</a> </li>
+						<li> <a href="#">Салон красоты</a> </li>
+					</ul>
+				</div>
+				<div class="col-md-4 col-xs-6 footer_info">
+					<h3>Информация</h3>
+					<ul class="footer_ul">
+						<li> <a href="#">О нас</a> </li>
+						<li> <a href="#">Лицензии</a> </li>
+						<li> <a href="#">Отзывы</a> </li>
+						<li> <a href="#">Новости</a> </li>
+						<li> <a href="#">Контакты</a> </li>
+						<li> <a href="#">Фототелеграфия</a> </li>
+						<li> <a href="#">Пользовательское соглашение о персональных данных</a> </li>
 
-		<a class="licens_info" href="#">Лицензия ЛО-77-01-006021 от 15.04.2013 г.
-				Имеются противопоказания.
-				Проконсультируйтесь со специалистом</a>
-	</div>
-	<div class="col-md-12 col-xs-12">
-		<a class="copir" href="#">© 2019 ООО "Профессо"</a>
-	</div>
-</div>
+					</ul>
+				</div>
+				<div class="col-md-4 col-xs-12 footer_contact_info">
+					<h3>Контактная информация</h3>
+					<div class="footer_phones_mail">
+						<div class="ph">
+							<img src="{THEME}/img/icons/phone-auricular-outline.svg" alt="phone">
+
+							<a href="tel:+74959831570">+7 (495) 983-15-70</a>
+							<a href="tel:+79031320231">+7 (903) 132-02-31</a>
+
+						</div>
+						<div class="mai">
+							<img src="{THEME}/img/icons/email.svg" alt="email">
+							<a href="mailto:ex.professo@mail.ru">ex.professo@mail.ru</a>
+						</div>
+					</div>
+					<ul class="footer_social_links">
+						<li id="vk"> <a href="#"></a> </li>
+						<li id="fb"> <a href="#"></a> </li>
+						<li id="ytb"> <a href="#"></a> </li>
+						<li id="googl"> <a href="#"></a> </li>
+						<li id="insta"> <a href="#"></a> </li>
+					</ul>
+
+					<a class="licens_info" href="#">Лицензия ЛО-77-01-006021 от 15.04.2013 г.
+						Имеются противопоказания.
+						Проконсультируйтесь со специалистом</a>
+				</div>
+				<div class="col-md-12 col-xs-12">
+					<a class="copir" href="#">© 2019 ООО "Профессо"</a>
+				</div>
+			</div>
 
 		</div>
 
@@ -291,7 +322,7 @@
 	<script src="libs/respond/respond.min.js"></script>
 	<![endif]-->
 	{jsfiles}
-	
+
 	{AJAX}
 
 	<script src="{THEME}/libs/waypoints/waypoints.min.js"></script>
@@ -304,15 +335,12 @@
 	<script src="{THEME}/js/input_mask.js"></script>
 
 	<script type="text/javascript">
-		$(document).ready(function() {
+		$(document).ready(function () {
 			$("#phone_main_form").inputmask("+7(999)999-99-99");
 
-			 
-		});     
-	    
-  
 
-		</script>
+		});
+	</script>
 </body>
 
 </html>
