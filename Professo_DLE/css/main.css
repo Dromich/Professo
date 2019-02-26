@@ -801,3 +801,11 @@ footer h3 {
 button[disabled], html input[disabled] {
 	opacity: .3;
 }
+
+.col-md-12.exp_blo {
+	border: 1px solid;
+	margin: 10px auto;
+}
+.exp_cont img {
+	max-width: 180px;
+}
