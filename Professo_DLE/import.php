@@ -27,20 +27,21 @@ $where2 = 'field_name = "field_icon" '; // задаєм вибоку по іко
 $rows_buy = $dle_api -> load_table ("content", '*',$where,  true, 0, 0, 'id', 'DESC');
 $rows_pic = $dle_api -> load_table ("content_fields_data", '*',$where2,  true, 0, 0, 'id', 'DESC');
 
-$dta = date('Y-m-d H:i');
+//$dta = date('Y-m-d H:i');
+
+function human_time($arg_1){
+	$format = 'Y-m-d H:i:s';
+$res = date($format,$arg_1);
+   
+    return $res;
+}
 
 if($is_logged == "1"){ // если пользователь авторизирован
 		$buy_list = '';
     $main_sum = 0;
 	
 	
-	// foreach ($rows_pic as $pic) {
 
-
-	// }
-	
-	
-	//$i = 0;
 
 foreach ($rows_buy as $row) {
 
@@ -58,22 +59,21 @@ $prev_text = $row["prev_text"];
 $full_text = $row["full_text"];  
 
 
-for ($i=0; $i < 100 ; $i++) { 
+for ($i=0; $i < 108 ; $i++) { 
 	if ($rows_pic[$i]["item_id"] === $idd) {
 		
 		$my_pic = $rows_pic[$i]["data"];
 	}
 }
     
-// if ($pic[$i]["item_id"] === $idd ) {
-// 	$item_pic = $pic[$i]["data"];
-// }
+
 
 
 $buy_list .= '
 <div class="col-md-12 exp_blo"  >
 <div class="exp_cont"  > <strong> Картинка в старой базе :</strong> <img src="'.$my_pic.'" alt="pic"></div>
 <div class="exp_cont"  > <strong> ID в старой базе :</strong>' . $row["id"] . '</div>
+<div class="exp_cont" > <strong> Время создания в старой базе :</strong>' . human_time($row["created"]) . '</div>
 <div class="exp_cont" ><strong> Заголовок(title) в старой базе :</strong> '.$row["title"].'</div>
 <div class="exp_cont"><strong> ЧПУ в старой базе :</strong>' . $url . '</div>
 <div class="exp_cont"  ><strong> Ключевые слова в старой базе :</strong>' . $keywords . '</div>
@@ -84,7 +84,7 @@ $buy_list .= '
 
 ';
 
-//$i++;
+
 }//кінець циклу парсера
 
 
