@@ -225,8 +225,15 @@
 					<input type="text" name="Имя" class="fio" placeholder="Ваше Имя" required>
 					<input type="text" id="phone_main_form" name="Телефон" class="fio" placeholder="Телефон" required>
 					<textarea name="Вопрос" class="my_quest" cols="30" rows="10" placeholder="Ваше сообщение" required></textarea>
-					<input type="submit" class="submit_main" value="Отправить сообщение">
+					<div class="chek_bo">
+						<input type="checkbox" name="Я согласен" id="done_box"> <a  id="done_box_linck" href="/politika-konfidencialnosti.html">Даю согласие на обработку персональных даных</a>
+					</div>
+					<div id="main_form_info"></div>
 
+					
+					<input id="main_form_submit" type="submit"  class="submit_main" value="Отправить сообщение" disabled>
+
+					
 				</form>
 
 			</div>

@@ -54,8 +54,21 @@ $(function() {
 		//  	};	
 
 	})
+
+	$(function(){
+		$('#done_box').on('change', function(){
+		 if($('#done_box').prop('checked')){
+		$('#main_form_submit').attr('disabled', false);
+		$('#main_form_info').html('')
+		 }else{
+		$('#main_form_submit').attr('disabled', true);
+		 }
+		});
+	   });
 	
 });
+
+
 
 $(window).load(function() {
 

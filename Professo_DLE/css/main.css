@@ -784,3 +784,20 @@ footer h3 {
 	text-align: left;
 	display: none;
 }
+.chek_bo {
+	display: block;
+	margin: 10px auto;
+	padding: 5px;
+}
+#done_box_linck {
+	color: #50a76d;
+	font-family: Rubik;
+	font-size: 14px;
+	font-weight: 400;
+	vertical-align: top;
+	display: inline-block;
+	margin-top: -2px;
+}
+button[disabled], html input[disabled] {
+	opacity: .3;
+}
