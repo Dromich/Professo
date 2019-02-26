@@ -72,9 +72,9 @@ for ($i=0; $i < 100 ; $i++) {
 
 $buy_list .= '
 <div class="col-md-12 exp_blo"  >
-<div class="exp_cont"  > <strong> Каринка в старой базе :</strong> <img src="https://medprofesso.ru'.$my_pic.'" alt="pic"></div>
+<div class="exp_cont"  > <strong> Картинка в старой базе :</strong> <img src="'.$my_pic.'" alt="pic"></div>
 <div class="exp_cont"  > <strong> ID в старой базе :</strong>' . $row["id"] . '</div>
-<div class="exp_cont" ><strong> Заголовок в старой базе :</strong> '.$row["title"].'</div>
+<div class="exp_cont" ><strong> Заголовок(title) в старой базе :</strong> '.$row["title"].'</div>
 <div class="exp_cont"><strong> ЧПУ в старой базе :</strong>' . $url . '</div>
 <div class="exp_cont"  ><strong> Ключевые слова в старой базе :</strong>' . $keywords . '</div>
 <div class="exp_cont"  > <strong> Описание в старой базе :</strong>'.$description.'</div>
