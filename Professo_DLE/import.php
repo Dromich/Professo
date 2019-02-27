@@ -19,6 +19,7 @@ include ('engine/api/api.class.php');
 
 $tpl -> load_template( '/migration.tpl' );
 
+
  $username = $member_id['name']; // отримуємо логін користувача
 
 $where = 'author = "Administrator" '; // задаєм вибоку по логіну 
@@ -27,7 +28,7 @@ $where2 = 'field_name = "field_icon" '; // задаєм вибоку по іко
 $rows_buy = $dle_api -> load_table ("content", '*',$where,  true, 0, 0, 'id', 'DESC');
 $rows_pic = $dle_api -> load_table ("content_fields_data", '*',$where2,  true, 0, 0, 'id', 'DESC');
 
-//$dta = date('Y-m-d H:i');
+
 
 function human_time($arg_1){
 	$format = 'Y-m-d H:i:s';

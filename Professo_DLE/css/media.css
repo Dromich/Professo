@@ -12,6 +12,22 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.ss_table tr td:nth-child(2n) {
+		
+		max-width: 250px;
+	
+	}
+	.tab table tbody tr td {
+		
+		
+		padding: 7px !important;
+		line-height: 15px;
+	}
+	.tab table {
+		width: 100% !important;
+		font-size: 12px;
+		line-height: 20px;
+	}
 	
 	.timetable_list {
 		
@@ -68,6 +84,22 @@
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width : 480px) {
+	.ss_table tr td:nth-child(2n) {
+		
+		max-width: 120px;
+	
+	}
+	.tab table tbody tr td {
+		/* width: 100% !important; */
+		border-bottom: 1px solid #333;
+		padding: 7px !important;
+		line-height: 15px;
+	}
+	.tab table {
+		width: 100% !important;
+		font-size: 11px;
+		line-height: 20px;
+	}
 	.photo_story {
 		max-width: 80%;
 		border-radius: 17px;
@@ -171,6 +203,22 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	.ss_table tr td:nth-child(2n) {
+		
+		max-width: 190px;
+	
+	}
+	.tab table tbody tr td {
+		/* width: 100% !important; */
+		border-bottom: 1px solid #333;
+		padding: 2px !important;
+		line-height: 15px;
+	}
+	.tab table {
+		width: 100% !important;
+		font-size: 11px;
+		line-height: 20px;
+	}
 	.head_menu {
 		display: block;
 		width: 100%;

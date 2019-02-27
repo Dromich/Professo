@@ -1,4 +1,4 @@
-<article class="col-md-6 col-xs-12 shortstory text">
+<article class="col-md-4 col-xs-12 shortstory text">
 	<h4 class="shortstory-title photo_ttl">{title}</h4>
 
 
