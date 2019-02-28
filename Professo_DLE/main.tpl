@@ -10,7 +10,7 @@
 
 	<meta charset="utf-8">
 
-	<title>Медицинскый центр здоров'я и красоты "Профессо"</title>
+	
 
 	{headers}
 
@@ -67,8 +67,7 @@
 				<ul class="head_menu">
 					<li><a href="/">О нас</a></li>
 					<li><a href="/stomatologija.html">Стоматология</a></li>
-					<li><a href="/">Неврология</a></li>
-					<li><a href="/nevrologija-i-manualnaja-terapija.html">Мануальная терапия</a></li>
+					<li><a href="/nevrologija-i-manualnaja-terapija.html"> Неврология и Мануальная терапия</a></li>
 					<li><a href="/kosmetologija.html">Косметология</a></li>
 					<li><a href="/korrekcija-figury.html">Коррекция фигуры</a></li>
 					
@@ -190,7 +189,7 @@
 				<div class="all_r_news">
 					<a href="/articles/"> <img src="{THEME}/img/right-arrow.png" alt="arow"> Все</a>
 				</div>
-				<h3 class="tucolor_ttl">Лицензии</h3>
+				<h3 class="tucolor_ttl">Документы</h3>
 
 				<div class="licens_items">
 <a href="/uploads/lic1.jpg" class="highslide" target="_blank"><img src="{THEME}/img/Licens_1.png" alt="Licens"></a>

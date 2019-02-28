@@ -92,15 +92,15 @@ $buy_list .= '
 
 ';
 
-//$short_story = '<div style="text-align:center;"><img src="'. $my_pic .'" alt="pic" class="fr-dib"><br></div>'.$prev_text;
+$short_story = '<div style="text-align:center;"><img src="'. $my_pic .'" alt="pic" class="fr-dib"><br></div>'.$prev_text;
 
 
 
-//$db->query( "INSERT INTO " . PREFIX . "_post (date, autor, short_story, full_story, xfields, title, descr, keywords, category, alt_name, allow_comm, approve, allow_main, fixed, allow_br, symbol, tags, metatitle) values ('$istime', 'admin', '$short_story', '$full_text', '$filecontents', '$title', '$description', '$keywords', '$category_list', '$url', '$zero', '$one', '$zero', '$zero', '$zero', '$catalog_url', '{$_POST['tags']}', '{$metatags['title']}')" );
+// $db->query( "INSERT INTO " . PREFIX . "_post (date, autor, short_story, full_story, xfields, title, descr, keywords, category, alt_name, allow_comm, approve, allow_main, fixed, allow_br, symbol, tags, metatitle) values ('$istime', 'admin', '$short_story', '$full_text', '$filecontents', '$title', '$description', '$keywords', '$category_list', '$url', '$zero', '$one', '$zero', '$zero', '$zero', '$catalog_url', '{$_POST['tags']}', '$title')" );
 	
-	//$id = $db->insert_id();
+// 	$id = $db->insert_id();
 
-	//$db->query( "INSERT INTO " . PREFIX . "_post_extras (news_id, allow_rate, votes, disable_index, access, user_id, disable_search, need_pass) VALUES('{$id}', '$zero', '$zero', '{$disable_index}', '$zero', '$one', '$zero', '$zero')" );
+// 	$db->query( "INSERT INTO " . PREFIX . "_post_extras (news_id, allow_rate, votes, disable_index, access, user_id, disable_search, need_pass) VALUES('{$id}', '$zero', '$zero', '{$disable_index}', '$zero', '$one', '$zero', '$zero')" );
 
 }//кінець циклу парсера
 
