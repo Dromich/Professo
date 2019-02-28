@@ -193,11 +193,11 @@
 				<h3 class="tucolor_ttl">Лицензии</h3>
 
 				<div class="licens_items">
-<a href="{THEME}/img/Licens_1.png" class="highslide" target="_blank"><img src="{THEME}/img/Licens_1.png" alt="Licens"></a>
+<a href="/uploads/lic1.jpg" class="highslide" target="_blank"><img src="{THEME}/img/Licens_1.png" alt="Licens"></a>
 
-<a href="{THEME}/img/Licens_2.png" class="highslide" target="_blank"><img src="{THEME}/img/Licens_2.png" alt="Licens"></a>
+<a href="/uploads/lic2.jpg" class="highslide" target="_blank"><img src="{THEME}/img/Licens_2.png" alt="Licens"></a>
 
-<a href="{THEME}/img/licens_3.png" class="highslide" target="_blank"><img src="{THEME}/img/licens_3.png" alt="Licens"></a>
+<a href="/uploads/lic3.jpg" class="highslide" target="_blank"><img src="{THEME}/img/licens_3.png" alt="Licens"></a>
 					
 					
 
@@ -247,7 +247,7 @@
 
 					<li>Зеленков Г. Г.<span>Пн-Ср <br> с 08:00 до 20:00</span></li>
 				</ul>
-				<a id="all_dictors" href="#">Посмотреть всех врачей</a>
+				<a id="all_dictors" href="/personal/">Посмотреть всех врачей</a>
 			</div>
 		</div>
 	</div>

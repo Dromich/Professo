@@ -12,6 +12,9 @@
 
 /* Small Devices, Tablets */
 @media only screen and (max-width : 768px) {
+	.article {
+		max-height: none;
+	}
 	.ss_table tr td:nth-child(2n) {
 		
 		max-width: 250px;
@@ -203,6 +206,9 @@
 
 /* Custom, iPhone Retina */
 @media only screen and (max-width : 320px) {
+	.article {
+		max-height: none;
+	}
 	.ss_table tr td:nth-child(2n) {
 		
 		max-width: 190px;

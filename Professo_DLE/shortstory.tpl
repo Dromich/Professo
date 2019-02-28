@@ -1,4 +1,4 @@
-<article class="col-md-6 col-xs-12 shortstory text">
+<article class="col-md-6 col-xs-12 shortstory text article">
 	<h4 class="shortstory-title">{title}</h4>
 
 	[xfvalue_short_story_img]
