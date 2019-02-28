@@ -841,3 +841,7 @@ button[disabled], html input[disabled] {
 	padding: 0;
 	margin: 0;
 }
+.shortstory.text {
+	
+	max-height: 225px;
+}

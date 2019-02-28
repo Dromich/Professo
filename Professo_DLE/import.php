@@ -31,7 +31,7 @@ $rows_pic = $dle_api -> load_table ("content_fields_data", '*',$where2,  true, 0
 
 
 function human_time($arg_1){
-	$format = 'Y-m-d H:i:s';
+	$format = 'Y-m-d  H:i:s';
 $res = date($format,$arg_1);
    
     return $res;
@@ -58,6 +58,11 @@ $keywords = $row["keywords"];
 $description = $row["description"];
 $prev_text = $row["prev_text"];
 $full_text = $row["full_text"];  
+$istime = human_time($row["created"]);
+$title= $row["title"];
+$category_list = 15 ;
+$zero = 0 ;
+$one = 1;
 
 
 for ($i=0; $i < 108 ; $i++) { 
@@ -79,12 +84,23 @@ $buy_list .= '
 <div class="exp_cont"><strong> ЧПУ в старой базе :</strong>' . $url . '</div>
 <div class="exp_cont"  ><strong> Ключевые слова в старой базе :</strong>' . $keywords . '</div>
 <div class="exp_cont"  > <strong> Описание в старой базе :</strong>'.$description.'</div>
-<div class="exp_cont"  ><strong> Краткое содержание в старой базе :</strong> '.$prev_text.' </div>
+<div class="exp_cont"  ><strong> Краткое содержание в старой базе :</strong> <div style="text-align:center;"><img src="'. $my_pic .'" alt="pic" class="fr-dib">
+<br>
+</div>'.$prev_text.' </div>
 <div class="exp_cont"  > <strong> Полное содержание в старой базе :</strong>' . $full_text . '</div>
 </div>
 
 ';
 
+//$short_story = '<div style="text-align:center;"><img src="'. $my_pic .'" alt="pic" class="fr-dib"><br></div>'.$prev_text;
+
+
+
+//$db->query( "INSERT INTO " . PREFIX . "_post (date, autor, short_story, full_story, xfields, title, descr, keywords, category, alt_name, allow_comm, approve, allow_main, fixed, allow_br, symbol, tags, metatitle) values ('$istime', 'admin', '$short_story', '$full_text', '$filecontents', '$title', '$description', '$keywords', '$category_list', '$url', '$zero', '$one', '$zero', '$zero', '$zero', '$catalog_url', '{$_POST['tags']}', '{$metatags['title']}')" );
+	
+	//$id = $db->insert_id();
+
+	//$db->query( "INSERT INTO " . PREFIX . "_post_extras (news_id, allow_rate, votes, disable_index, access, user_id, disable_search, need_pass) VALUES('{$id}', '$zero', '$zero', '{$disable_index}', '$zero', '$one', '$zero', '$zero')" );
 
 }//кінець циклу парсера
 

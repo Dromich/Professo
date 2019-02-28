@@ -66,17 +66,17 @@
 			<div class="head_menu_wrp col-md-12">
 				<ul class="head_menu">
 					<li><a href="/">О нас</a></li>
-					<li><a href="/">Стоматология</a></li>
+					<li><a href="/stomatologija.html">Стоматология</a></li>
 					<li><a href="/">Неврология</a></li>
-					<li><a href="/">Мануальная терапия</a></li>
-					<li><a href="/">Косметология</a></li>
-					<li><a href="/">Коррекция фигуры</a></li>
+					<li><a href="/nevrologija-i-manualnaja-terapija.html">Мануальная терапия</a></li>
+					<li><a href="/kosmetologija.html">Косметология</a></li>
+					<li><a href="/korrekcija-figury.html">Коррекция фигуры</a></li>
 					
 					[not-smartphone] <li><span id="header_green_ring">...</span></li> [/not-smartphone]
 					<div class="drop_div">
-						<li class="drop_items"><a href="/">Салон красоты</a></li>
+						<li class="drop_items"><a href="/salon-krasoty.html">Салон красоты</a></li>
 					<li class="drop_items"><a href="/">Контакты</a></li>
-					<li class="drop_items"><a href="/">Врачи</a></li>
+					<li class="drop_items"><a href="/personal/">Врачи</a></li>
 					</div>
 					
 					[smartphone] <li><span id="header_green_ring">...</span></li> [/smartphone]
@@ -105,9 +105,9 @@
 			<div class="col-md-3 last_news">
 				<h3 class="tucolor_ttl">Последние <span>новости</span></h3>
 				<hr>
-				{custom id="1" template="main_news_last" available="main" navigation="no" from="0" limit="1" fixed="no"	order="date" sort="desc" cache="no"}
+				{custom category="15" template="main_news_last" available="main" navigation="no" from="0" limit="1" fixed="no"	order="rand"  cache="no"}
 
-				<a href="#">Все новости</a>
+				<a href="/articles/">Все новости</a>
 			</div>
 
 		</div>
@@ -185,10 +185,10 @@
 			<div class="col-md-2 r_col">
 				<h3 class="tucolor_ttl">Новости</h3>
 
-				{custom category="1-100" template="main_news" available="main" navigation="no" from="0" limit="2" fixed="no"order="date" sort="desc" cache="no"}
+				{custom category="15" template="main_news" available="main" navigation="no" from="10" limit="3" fixed="no" order="rand" sort="desc" cache="no"}
 
 				<div class="all_r_news">
-					<a href=""> <img src="{THEME}/img/right-arrow.png" alt="arow"> Все</a>
+					<a href="/articles/"> <img src="{THEME}/img/right-arrow.png" alt="arow"> Все</a>
 				</div>
 				<h3 class="tucolor_ttl">Лицензии</h3>
 
