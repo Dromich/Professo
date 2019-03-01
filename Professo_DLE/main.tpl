@@ -65,7 +65,7 @@
 			</div>
 			<div class="head_menu_wrp col-md-12">
 				<ul class="head_menu">
-					<li><a href="/">О нас</a></li>
+					<li><a href="/o-nas.html">О нас</a></li>
 					<li><a href="/stomatologija.html">Стоматология</a></li>
 					<li><a href="/nevrologija-i-manualnaja-terapija.html"> Неврология и Мануальная терапия</a></li>
 					<li><a href="/kosmetologija.html">Косметология</a></li>
@@ -74,7 +74,7 @@
 					[not-smartphone] <li><span id="header_green_ring">...</span></li> [/not-smartphone]
 					<div class="drop_div">
 						<li class="drop_items"><a href="/salon-krasoty.html">Салон красоты</a></li>
-					<li class="drop_items"><a href="/">Контакты</a></li>
+					<li class="drop_items"><a href="/index.php?do=feedback">Контакты</a></li>
 					<li class="drop_items"><a href="/personal/">Врачи</a></li>
 					</div>
 					
@@ -104,7 +104,7 @@
 			<div class="col-md-3 last_news">
 				<h3 class="tucolor_ttl">Последние <span>новости</span></h3>
 				<hr>
-				{custom category="15" template="main_news_last" available="main" navigation="no" from="0" limit="1" fixed="no"	order="rand"  cache="no"}
+				{custom category="15" template="main_news_last" available="global" navigation="no" from="0" limit="1" fixed="no"	order="rand"  cache="no"}
 
 				<a href="/articles/">Все новости</a>
 			</div>
@@ -259,23 +259,24 @@
 				<div class="col-md-4 col-xs-6 footer_services">
 					<h3>Услуги</h3>
 					<ul class="footer_ul">
-						<li> <a href="#">Стоматология</a> </li>
-						<li> <a href="#">Неврология и мануальная терапия</a> </li>
-						<li> <a href="#">Косметология</a> </li>
-						<li> <a href="#">Коррекция фигуры</a> </li>
-						<li> <a href="#">Салон красоты</a> </li>
+						<li> <a href="/stomatologija.html">Стоматология</a></li>
+						<li><a href="/nevrologija-i-manualnaja-terapija.html"> Неврология и Мануальная терапия</a></li>
+						<li><a href="/kosmetologija.html">Косметология</a></li>
+						<li><a href="/korrekcija-figury.html">Коррекция фигуры</a></li>
+						
+						<li> <a href="/salon-krasoty.html">Салон красоты</a> </li>
 					</ul>
 				</div>
 				<div class="col-md-4 col-xs-6 footer_info">
 					<h3>Информация</h3>
 					<ul class="footer_ul">
-						<li> <a href="#">О нас</a> </li>
+						<li> <a href="/o-nas.html">О нас</a> </li>
 						<li> <a href="#">Лицензии</a> </li>
 						<li> <a href="#">Отзывы</a> </li>
-						<li> <a href="#">Новости</a> </li>
-						<li> <a href="#">Контакты</a> </li>
+						<li> <a href="/articles/">Новости</a> </li>
+						<li> <a href="/index.php?do=feedback">Контакты</a> </li>
 						<li> <a href="#">Фототелеграфия</a> </li>
-						<li> <a href="#">Пользовательское соглашение о персональных данных</a> </li>
+						<li> <a href="/politika-konfidencialnosti.html">Пользовательское соглашение о персональных данных</a> </li>
 
 					</ul>
 				</div>

@@ -20,3 +20,6 @@
 [static=salon-krasoty]
 {custom category="14" template="doctor_iner"  navigation="no" from="0" limit="10" fixed="no" order="date" sort="desc" cache="no"}
 [/static]
+[static=o-nas]
+{custom category="16" template="doctor_iner"  navigation="no" from="0" limit="10" fixed="no" order="date" sort="desc" cache="no"}
+[/static]

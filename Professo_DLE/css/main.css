@@ -861,3 +861,14 @@ button[disabled], html input[disabled] {
 	color: #fff;
 	text-decoration: none;
 }
+#map img {
+	max-width: 100%;
+}
+.right {
+	text-align: left;
+	font-size: 15px;
+	line-height: 28px;
+	font-weight: 500;
+	padding-left: 30px;
+	margin-top: -20px;
+}

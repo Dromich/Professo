@@ -8,5 +8,5 @@
 	
 	 [/full-link]
 
-	 <p class="doc_info">{short-story limit="40"}</p>
+	 <p class="doc_info">{short-story limit="80"}</p>
 	</div>
